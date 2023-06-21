@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEFORE AND AFTER PESUDO SELECTORS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Noto+Serif:ital@1&family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+    <style>
+        body{
+            color:white;
+            background-color: black;
+            padding: 0%;
+            margin: 0%;
+            background-image: url("https://static.sadhguru.org/d/46272/1664423833-shiva-wallpaper-mahashivratri.jpg");
+            background-repeat: no-repeat;
+  background-size: 1600px 900px; 
+  /* opacity: ; this is used to blur the image or we can say light the image so that content can be visisble*/
+        }
+.navigation{
+display: flex;
+}
+li{
+    list-style: none;
+    padding: 20px 23px;
+    font-size: 17px;
+    font-family: 'Kanit', sans-serif;
+font-family: 'Noto Serif', serif;
+font-family: 'Sedgwick Ave Display', cursive;;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    /* border: 2px red solid; */
+    margin: 3px 200px;
+    height: 344px;
+    justify-content: center;
+}
+h1{
+    font-size: 4em;
+}
+/* section::before{ */
+    /* content:"I will not waste a single second today" */
+/* } in this method conent comes or add before another content */
+section::after{
+    content:"Keep calm and carry on";
+    font-size: 28px;
+}
+
+    </style>
+ </head>
+ <body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+        </header>
+        <section>
+            <h1>Welcome to Coding World</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, numquam veritatis exercitationem quod nostrum esse corrupti ea itaque perferendis nihil voluptatum sit quaerat autem facilis similique? Eaque suscipit possimus quidem laboriosam autem! Quaerat, hic.</p>
+        </section>
+        <hr>
+ </body>
+ </html>
